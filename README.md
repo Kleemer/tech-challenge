@@ -25,7 +25,7 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
 This solution implements a recursive `TreeItem` Vue component to render the hierarchical structure from the `fetchData.ts` data.
 
 ### Time spent
-Approximately 45 minutes, including setup, implementation, and minor adjustments.
+Approximately 60 minutes, including setup, implementation, and minor adjustments.
 
 ### Technical choices and reasoning
 - I used a **recursive Vue component** (`TreeItem.vue`) to display items with nested children (more elegant and scalable way to handle unknown levels of nesting in a tree structure).

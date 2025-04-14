@@ -10,8 +10,8 @@
         </div>
         <div v-if="isOpen" style="padding-left: 1rem">
             <TreeItem
-                v-for="(child, index) in item.children"
-                :key="index"
+                v-for="child in item.children"
+                :key="child.id"
                 :item="child"
             />
         </div>
