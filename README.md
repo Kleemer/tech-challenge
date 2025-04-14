@@ -17,3 +17,18 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
    1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
    2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
 2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+
+---
+
+## Solution – Tree Structure Implementation
+
+This solution implements a recursive `TreeItem` Vue component to render the hierarchical structure from the `fetchData.ts` data.
+
+### Time spent
+Approximately 60 minutes, including setup, implementation, and minor adjustments.
+
+### Technical choices and reasoning
+- I used a **recursive Vue component** (`TreeItem.vue`) to display items with nested children (more elegant and scalable way to handle unknown levels of nesting in a tree structure).
+- The data is fetched asynchronously in the `created()` hook using the `fetchData()` function. Once resolved, the component state is updated with the result.
+- Toggle logic is handled simply using Unicode characters (`▶` / `▼`).
+- Since I previously implemented a **page builder in Vue** that heavily relied on recursive structures, the logic here felt natural and straightforward.
